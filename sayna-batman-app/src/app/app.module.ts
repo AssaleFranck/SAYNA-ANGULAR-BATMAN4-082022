@@ -7,6 +7,9 @@ import { HomeComponent } from './components/home/home.component';
 import { NavbarComponent } from './components/layouts/navbar/navbar.component';
 import { FooterComponent } from './components/layouts/footer/footer.component';
 import { ScrollbarComponent } from './components/layouts/scrollbar/scrollbar.component';
+import { EshopComponent } from './components/eshop/eshop.component';
+import { AsideComponent } from './components/aside/aside.component';
+import { CardComponent } from './components/card/card.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +17,10 @@ import { ScrollbarComponent } from './components/layouts/scrollbar/scrollbar.com
     HomeComponent,
     NavbarComponent,
     FooterComponent,
-    ScrollbarComponent
+    ScrollbarComponent,
+    EshopComponent,
+    AsideComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,

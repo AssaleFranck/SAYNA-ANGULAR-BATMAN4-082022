@@ -1,6 +1,6 @@
-<nav class="navbar navbar-expand-lg mx-auto">
+<nav class="navbar navbar-expand-lg mx-auto fixed-top">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" routerLink="home">
             <img src="../../../../assets/logos/logohome.png" alt="Batman Home">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -8,12 +8,11 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ms-auto d-flex justify-content-end">
-                <a class="nav-link active fs-4 text-center text-uppercase" aria-current="page" href="#">Home</a>
-                <a class="nav-link fs-4 text-center text-uppercase" href="#">game</a>
-                <a class="nav-link fs-4 text-center text-uppercase" href="#">e-shop</a>
-                <a class="nav-link fs-4 text-center text-uppercase">mon compte</a>
+                <a class="nav-link active fs-4 text-center text-uppercase" aria-current="page" routerLink="home" >Home</a>
+                <a class="nav-link fs-4 text-center text-uppercase" routerLink="">game</a>
+                <a class="nav-link fs-4 text-center text-uppercase" routerLink="eshop">e-shop</a>
+                <a class="nav-link fs-4 text-center text-uppercase" routerLink="card" >mon compte</a>
             </div>
         </div>
     </div>
 </nav>
-<!-- <p>hello</p> -->

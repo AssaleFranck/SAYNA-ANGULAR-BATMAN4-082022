@@ -24,6 +24,18 @@ p, h1, h3, h4, h6 {
     font-family: 'Space Grotesk', sans-serif;
 }
 
-a, h2 {
+a, h2, h5, #price {
     font-family: 'Rajdhani', sans-serif;
 }
+
+// .btn_bat {
+//     font-size: 1.8vw;
+//     font-weight: normal;
+//     padding: 1vw 2.5vw;
+//     text-transform: uppercase;
+//     background: linear-gradient(90deg, rgba(255, 255, 255, 0.4),#b113139f);
+//     &:hover{
+//         background: linear-gradient(90deg, rgba(255, 255, 255, 0.644),#b11313);
+
+//     }
+// }

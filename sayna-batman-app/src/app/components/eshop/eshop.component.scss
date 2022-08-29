@@ -1,0 +1,32 @@
+main {
+    height: 110vh;
+    background-image: url("../../../assets/bg/bg_1.png");
+    background-color: black;
+    background-repeat: no-repeat;
+    // background-size: contain;
+    height: 300vh;
+    width: 100%;
+}
+
+.banner {
+    height: 110vh;
+    width: 90%;
+}
+.container-fluid {
+    border: 2px solid #bcbbbd48;
+    width: 90%;
+    
+}
+h2 {
+    height: auto;
+    display: block;
+    font-size: 3.5em;
+    color: #fff;
+}
+.fleche {
+    height: 18vh;
+    
+    img {
+        height: 60%;
+    }
+}
