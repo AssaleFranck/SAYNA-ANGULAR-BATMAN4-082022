@@ -1,0 +1,23 @@
+nav {
+    width: 90%;
+    height: 17vh !important;
+    border: 2px solid #bcbbbd48;
+    border-top: none;
+    background: black;
+    
+}
+
+.navbar-nav {
+    width: 70%;
+    a{
+        width: 20%;
+        color: #fff;
+        // margin: 0 0.2rem !important;
+        padding: 0;
+        &:hover{
+            font-weight: bold;
+            text-decoration: underline;
+            // margin: 0 0.2rem !important;
+        }
+    }
+}

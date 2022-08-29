@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+p, h1, h3, h4, h6 {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+p {
+    font-size: 1.7vw;
+    font-weight: 200;
+}
+
+h1 {
+    font-size: 2.7vw;
+    margin: 1.2rem 0;
+}
+
+
+//  **************************** FONT ****************************
+
+a, h2 {
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.space_grotesk {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+/* -------------------------------------------------------------*/
+
+
+.w100 {
+    width: 100%;
+}
+.w7 {
+    width: 100%;
+}
+.margin {
+    margin: 0 7.5vw;
+}
+.bg {
+    background: linear-gradient(135deg,#40403b, #081d29) !important;
+}
+
+.d-flex {
+    display: flex;
+}
+.flex_center {
+    justify-content: center;
+    align-items: center;
+
+}
+.flex_between {
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.flex_end {
+    justify-content: flex-end;
+    align-items: center;
+}
+.flex_start {
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.flex_evenly{
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.position_up {
+    position: relative;
+    left: -14vw;
+    width: 102vw;
+}
+
+.border{
+    border: 2px solid #bcbbbd48;
+}
+
+.test {
+    border: 1px solid #fff;
+}
+.test2 {
+    border: 1px solid green;
+}
+.test3 {
+    border: 1px solid yellow;
+}
+.test4 {
+    border: 1px solid red;
+}
+
+//  **************************** MAIN ***************************************
+
+main {
+    @extend .margin, .border;
+    border-bottom: none;
+}
+/* -------------------------------------------------------------*/
+
+.active_page {
+    font-weight: normal;
+    text-decoration: underline;
+}

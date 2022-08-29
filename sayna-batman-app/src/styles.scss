@@ -1,1 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+@import '../node_modules/bootstrap/dist/css/bootstrap.css';
+
+@font-face {
+    font-family: 'Space Grotesk', sans-serif;
+    src: url('./app/styles/font/Space_Grotesk/SpaceGrotesk-VariableFont_wght.ttf');
+}
+@font-face {
+    font-family: 'Rajdhani', sans-serif;
+    src: url('./app/styles/font/Rajdhani/Rajdhani-Medium.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+    // color: #fff;
+}
+
+p, h1, h3, h4, h6 {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+a, h2 {
+    font-family: 'Rajdhani', sans-serif;
+}

@@ -1,0 +1,81 @@
+header{
+    @extend .d-flex, .border, .margin;
+    justify-content: center;
+    align-items: flex-start;
+    border-top: none;
+    height: 27vh;
+}
+
+nav {
+    @extend .d-flex, .flex_between;
+    flex-wrap: nowrap !important;
+    margin-top: 4%;
+    width: 90%;
+}
+
+.logo {
+    width: 12%;
+
+    img {
+        width: 100%;
+    }
+}
+
+ul {
+    @extend .d-flex, .flex_end;
+    list-style-type: none;
+    width: 40%;
+    
+    li {
+        font-size: 2.5vw;
+        margin: 0 0.2rem;
+        width: 30%;
+        text-align: center;
+        
+        a{
+            font-weight: normal;
+            text-transform: uppercase;
+            margin: 0 0.4rem;
+            &:hover{
+                font-weight: bold;
+                margin: 0 0.2rem;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+/* --------------------- TABLET ---------------------------*/
+
+@media (max-width: 768px) {
+    
+    header {
+        height: 20vh;
+    }
+}
+
+/* -------------------- MOBILE --------------------------*/
+
+
+@media (max-width: 480px) {
+
+    header {
+        height: 7vh;
+    }
+        
+    nav {
+        
+        .logo {
+            width: 15%;
+        }
+        
+        ul {
+            width: 70%;
+        }
+        
+        li {
+            margin: 0;
+            font-size: 3vw;
+        }
+    }
+}

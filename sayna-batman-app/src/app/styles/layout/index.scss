@@ -1,0 +1,737 @@
+@import '../main';
+
+body {
+    overflow-x: hidden;
+}
+
+
+// body{
+//     background-image: url("Assets/Illustrations/Bathome1.png");
+//     background-color: black;
+//     background-repeat: no-repeat;
+//     background-size: contain;
+// }
+
+
+/* -------------------------------------------------------------*/
+
+
+
+//  **************************** BANNER ***************************************
+
+.banner {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 80% auto;
+    row-gap: 0;
+    height: 110vh;
+}
+
+.banner_info, .banner_text, .banner_btn, .banner_arrow {
+    @extend .d-flex;
+}
+
+.banner_info {
+    @extend .flex_center;
+    flex-flow: row wrap;
+    width: 50%;
+    margin: auto;
+}
+
+.banner_text {
+    @extend .flex_center;
+    flex-flow: row wrap;
+
+    p {
+        text-align: center;
+    }
+}
+
+.banner_btn {
+    @extend .w100, .flex_evenly;
+    margin-top: 2vh;
+    
+}
+
+.btn {
+    font-size: 1.8vw;
+    font-weight: normal;
+    padding: 1vw 2.5vw;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.4),#b113139f);
+    &:hover{
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0.644),#b11313);
+
+    }
+}
+
+.banner_arrow {
+    @extend .flex_center;
+}
+/* -------------------------------------------------------------*/
+
+
+
+//****************************** SECTION **********************************
+
+section {
+    margin: 10vw 0;
+    padding: 0 7%;
+
+    h2 {
+        font-size: 2.5vw;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 4vh;
+    }
+
+    p {
+        text-align: justify;
+    }
+}
+
+.row_card {
+    margin-top: 5vw;
+    @extend .d-flex, .flex_between;
+
+    .card {
+        width: 30%;
+
+        img{
+            width: 100%;
+        }
+    }
+
+    h4 {
+        text-align: center;
+        margin-top: 4vh;
+        font-size: 1.3vw;
+        font-weight: normal;
+    }
+}
+/* -------------------------------------------------------------*/
+
+
+
+
+// ************************ BATMAN AU CINEMA ************************
+
+#batman {
+    margin-top: 0;
+}
+/* -------------------------------------------------------------*/
+
+
+// ************************ NEMESIS ************************
+#nemesis {
+    position: relative;
+    
+    .batarang {
+        position: absolute;
+        top: -5vw;
+        left: 11vw;
+        z-index: 8;
+        width: 10vw;
+    }
+}
+/* -------------------------------------------------------------*/
+
+
+// ************************ ALLIES ************************
+#allies {
+    position: relative;
+
+    .bat {
+        position: absolute;
+        top: -18vw;
+        right: -8vw;
+        z-index: 7;
+        width: 32vw;
+    }
+}
+/* -------------------------------------------------------------*/
+
+
+// ******************** JUSTICE LEAGUE ********************
+#league {
+    margin-bottom: 0 !important;
+
+    p {
+        margin-bottom: 5vw;
+    }
+
+    .league_carousel {
+        @extend .position_up;
+        background-color: #000;
+        
+        img {
+            width: 100%;
+        }
+    }
+}
+/* -------------------------------------------------------------*/
+
+
+// ******************** MULTIMEDIA ************************
+
+#multimedia {
+    margin: 0 !important;
+}
+
+.carousel {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    margin: 6vw 0;
+
+    .btn_slide_left {
+        @extend .d-flex, .flex_start ;
+    }
+
+    .btn_slide_right {
+        @extend .d-flex, .flex_end ;
+    }
+}
+
+.carousel_item {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    column-gap: 0;
+
+    img {
+        height: 100%;
+        width: 100%;
+    }
+
+}
+
+.slide_content {
+    @extend .bg;
+    padding: 1.5vw;
+    border: 1px solid #c4c4c4;
+    border-left: none;
+    margin: 0;
+    border-radius: 0 4% 4% 0;
+
+    p{
+        font-size: 1vw;
+        text-align: left;
+    }
+
+    h6 {
+        font-size: 1.3vw;
+        font-weight: lighter;
+        margin-bottom: 10px;
+
+        span {
+            color: #FFFF00;
+        }
+    }
+}
+/* -------------------------------------------------------------*/
+
+
+// ************************ Player ************************
+
+.player, .player_img{
+    @extend .w100;
+}
+
+.player {
+    @extend .d-flex, .flex_center;
+    position: relative;
+    margin-bottom: 10vh;
+
+    &:hover {
+        @extend .d-flex, .flex_center;
+        box-shadow: 0 0 20px 20px rgba(255, 255, 255, 0.295);
+
+        .btn_play {
+            top: 39%;
+            left: 43.7%;
+            width: 12%;
+        }
+    }
+    
+    .btn_play {
+        position: absolute;
+        top: 38%;
+        left: 42.7%;
+        width: 14%;
+    }
+}
+/* -------------------------------------------------------------*/
+
+
+// ************************ NEWSLETTER ************************
+
+#newsletter {
+
+    .container {
+        @extend .d-flex, .flex_between, .position_up, .bg;
+        flex-flow: column wrap;
+    }
+
+    .col {
+        margin: 7vh 0;
+        width: 60%;
+        
+        .row {
+            width: 100%;
+            margin-bottom: 3vw;
+
+            h4 {
+                margin: 0 0 2vw 0;
+            }
+
+        }
+
+        h2 {
+            margin: 0 auto;
+            // width: fit-content;
+        }
+    }
+}
+
+form {
+    @extend .d-flex,;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-flow: column wrap;
+    margin-top: 3vw;
+
+    .input {
+        border-bottom: 1px solid #c4c4c4;
+        input, select {
+            width: 100%;
+            background: none;
+            border: none;
+            outline: none;
+            padding: 8px 0 4px 0;
+            font-size: large;
+            color: #fff;
+            font-weight: lighter;
+        }
+        select {
+            
+            option {
+                background: #081d29;
+                color: #c4c4c4;
+                
+            }
+        } 
+    }
+
+    h4 {
+        font-size: 22px;
+        margin-bottom: 7vh;
+        font-weight: lighter;
+        text-transform: uppercase;
+    }
+
+    .btn {
+        margin: 0 auto;
+        padding: 0.8rem 4rem;
+        font-size: 1.25rem;
+    }
+}
+
+.condition {
+    @extend .d-flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    .input{
+        margin: 1vw 0;
+    }
+
+    p {
+        font-size: large;
+        width: 80%;
+        color: #c4c4c4;
+
+    }
+}
+
+.newsletter_choose {
+    @extend .d-flex, .flex_between;
+    margin-top: 1.4vw !important;
+    width: 65%;
+    margin: 0 auto;
+
+    .btn_sm {
+        padding: 0.6rem 1.8rem;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #c4c4c4;
+        &:hover {
+            @extend .bg ;
+        }
+    }
+}
+/* -------------------------------------------------------------*/
+
+
+// ************************ MESSAGE ************************
+
+#message {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    height: 70vh;
+    
+    .left_mark, .right_mark {
+        @extend .d-flex;
+        flex-direction: column;
+    }
+
+    .left_mark {
+        @extend .flex_start;
+    }
+
+    .right_mark {
+        @extend .flex_end;
+    }
+}
+
+.message_slide {
+    @extend .d-flex, .flex_center;
+    
+    .container {
+        @extend .d-flex, .flex_center;
+        flex-direction: column;
+
+        p{
+            width: 80%;
+            margin: 0;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        .text_sm {
+            width: 40%;
+            margin-top: 30px;
+            line-height: 30px;
+            font-size: 12px;
+        }
+    }
+}
+/* -------------------------------------------------------------*/
+
+
+
+// *********************** MEDIA QUERY *****************************
+
+
+/* --------------------- TABLET ---------------------------*/
+
+@media (max-width: 768px) {
+    
+    .banner {
+        height: 70vh;
+
+        .banner_info {
+            width: 55%;
+        }
+
+        .banner_btn {
+            margin-top: 0;
+        }
+
+        .btn {
+            padding: 0.7em 2em;
+        }
+    }
+
+    .row_card {
+
+        .card {
+            width: 30%;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    #allies {
+
+        .bat {
+            top: -17vw;
+            right: -8vw;
+        }
+    }
+
+    #league {
+
+        .league_carousel {
+            left: -14vw;
+            width: 102vw;
+        }
+
+    }
+    
+
+    #multimedia {
+        
+        .carousel {
+            grid-template-columns: 10% 80% 10%;
+        }
+
+        .btn_slide_left, .btn_slide_right {
+            
+            img {
+                width: 100%;
+            }
+        }
+
+        h6 {
+            font-size: medium;
+            margin-bottom: 5px;
+        }
+
+        p {
+            font-size: 14px;
+        }
+
+    }
+
+    #newsletter {
+
+        .col {
+            width: 77%;
+            font-size: small;
+        }
+
+        h2 {
+            font-size: 30px;
+        }
+
+        h4 {
+            font-size: 20px;
+        }
+        p, input {
+            font-size: medium;
+        }
+        select {
+            font-size: small;
+
+        }
+    }
+
+
+    #message {
+        height: 40vw;
+        margin-bottom: 0;
+
+        .left_mark, .right_mark {
+            img {
+                width: 70%;
+            }
+        }
+
+        .message_slide {
+
+            .container {
+
+                p {
+                    font-size: 2.5vw;
+                    width: 100%;
+                }
+
+                .text_sm {
+                    font-size: 1.5vw;
+                    margin-top: 10px;
+                    width: 70%;
+                    line-height: normal;
+                }
+            }
+        }
+    }
+}
+
+
+/* -------------------- MOBILE --------------------------*/
+
+@media (max-width: 480px) {
+
+    p {
+        font-size: small;
+    }
+
+    .banner {
+        height: 40vh;
+        grid-template-rows: 80% 20%;
+
+        .banner_info {
+            width: 80%;
+        }
+
+        .banner_btn {
+            margin-top: 0;
+        }
+
+        .btn {
+            font-size: x-small;
+            padding: 0.7em 1.4em;
+        }
+
+        img {
+            height: 50%;
+        }
+
+        p {
+            // text-align: start;
+            font-size: 10px;
+        }
+
+        h1 {
+            font-size: medium;
+            margin: 1vh;
+        }
+    }
+
+    section {
+        
+        h2 {
+            font-size: larger;
+            margin-bottom: 2vh;
+        }
+        .row_card {
+            flex-direction: column;
+            .card {
+                width: 80%;
+            }
+            h4 {
+                margin-top: 1vw;
+                margin-bottom: 6vh;
+                font-size: 1em;
+            }
+        }
+    }
+
+
+    // Img Shuriken Bat
+    .batarang {
+        position: absolute;
+        top: -4vh !important;
+        left: 18vw !important;
+        z-index: 8;
+    }
+
+    #allies {
+
+        .bat {
+            top: -15vw;
+            right: -9vw;
+        }
+    }
+
+
+    #multimedia {
+        
+        h6 {
+            font-size: small;
+            margin-bottom: 5px;
+        }
+
+        p {
+            font-size: 10px;
+        }
+        .carousel {
+            grid-template-columns: 10% 80% 10%;
+            
+            .btn_slide_left {
+                display: flex;
+                justify-content: center !important;
+                
+                img {
+                    width: 70%;
+                }
+            }
+
+            .btn_slide_right {
+                margin: 0 auto;
+
+                img {
+                    width: 70%;
+                    margin-left: 2vw;
+                }
+            }
+        }
+
+    }
+
+    #newsletter {
+
+        .col {
+            width: 80%;
+            font-size: small;
+        }
+
+        h2 {
+            font-size: 28px;
+        }
+
+        h4 {
+            font-size: 16px;
+        }
+
+        p {
+            width: 100%;
+        }
+
+        p, input {
+            font-size: small;
+        }
+
+        select {
+            font-size: smaller;
+
+        }
+
+        .newsletter_choose {
+            width: 80%;
+
+            .btn_sm {
+                padding: 0.2rem 1rem;
+            }
+        }
+
+        .btn {
+            padding: 0.5rem 1.6rem;
+            font-size: 1rem;
+        }
+    }
+
+    #message {
+        height: 30vh;
+        grid-template-columns: 13% 74% 13%;
+        grid-template-rows: 100%;
+
+        .left_mark, .right_mark {
+            height: 80%;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .message_slide {
+
+            .container {
+
+                p {
+                    font-size: 2.5vw;
+                    width: 100%;
+                }
+
+                .text_sm {
+                    font-size: 1.5vw;
+                    margin-top: 10px;
+                    width: 70%;
+                    line-height: normal;
+
+                }
+            }
+        }
+    }
+}
