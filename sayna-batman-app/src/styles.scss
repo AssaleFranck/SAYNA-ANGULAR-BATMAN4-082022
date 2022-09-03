@@ -15,10 +15,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-body {
-    background-color: black;
-    // color: #fff;
-}
+
 
 p, h1, h3, h4, h6 {
     font-family: 'Space Grotesk', sans-serif;
@@ -28,6 +25,9 @@ a, h2, h5, #price {
     font-family: 'Rajdhani', sans-serif;
 }
 
+body {
+    background: black !important;
+}
 // .btn_bat {
 //     font-size: 1.8vw;
 //     font-weight: normal;

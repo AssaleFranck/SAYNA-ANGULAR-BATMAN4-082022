@@ -10,6 +10,9 @@ import { ScrollbarComponent } from './components/layouts/scrollbar/scrollbar.com
 import { EshopComponent } from './components/eshop/eshop.component';
 import { AsideComponent } from './components/aside/aside.component';
 import { CardComponent } from './components/card/card.component';
+import { NotFundComponent } from './components/not-fund/not-fund.component';
+import { GameComponent } from './components/game/game.component';
+import { ProductsComponent } from './components/products/products.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,10 @@ import { CardComponent } from './components/card/card.component';
     ScrollbarComponent,
     EshopComponent,
     AsideComponent,
-    CardComponent
+    CardComponent,
+    NotFundComponent,
+    GameComponent,
+    ProductsComponent
   ],
   imports: [
     BrowserModule,
