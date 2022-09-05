@@ -1,16 +1,61 @@
-<!-- <div class="container-fluid"> -->
-    <div class="row">
-        <div class="col-md-4 m-0" *ngFor="let prod of products">
-            <div class="card m-0">
-                <img src="{{prod.imgUrl}} " class="card-img-top img-fluid" alt="...">
-                <div class="card-body text-white d-flex flex-column justify-content-between align-items-center bg-none">
-                    <div class="text bg-black rounded-0 border border-white py-4 w-100">
-                        <h5 class="card-title text-uppercase fw-normal text-center">{{prod.title}}</h5>
-                        <p class="card-text text-center" id="price">Some quick example text to build on the card <span> {{prod.price}} </span> title.</p>
+<section class="mx-4">
+    <div class="container-fluid">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item ms-0"><a routerLink="home">E-shop</a></li>
+                <li class="breadcrumb-item active">Panier</li>
+            </ol>
+        </nav>
+        <div class="row ms-1">
+            <h6 class="text-white fw-normal px-0">Récapitulatif du panier</h6>
+
+            <!-- PRODUIT -->
+            <div class="row border py-4 m-0 my-2 w-90">
+                <div class="col-sm-7 d-flex">
+                    <div class="col-sm-3">
+                        <img src="../../../assets/articles/article_13.png" alt="" class="img-fluid">
                     </div>
-                    <a href="#" class="btn_bat my-4 py-2 text-center px-4">Go somewhere</a>
+                    <div class="col-sm-9 p-0 m-0 d-flex flex-column justify-content-center align-items-start">
+                        <p class="p-0 m-0 fs-5 text-white">Nom du produit</p>
+                        <p class="p-0 m-0">Numero de produit X</p>
+                    </div>
                 </div>
+                <div class="col-sm-5 d-flex justify-content-between align-items-center">
+                    <p class="text-white fs-4 m-0">49,00€</p>
+                    <div class="px-2 w-30 bg-white d-flex justify-content-between align-items-center">
+                        <span class="fs-2 p-0">-</span>
+                        <span class="mx-3 fs-3">1</span>
+                        <span class="fs-2 p-0">+</span>
+                    </div>
+                    <span style="font-size: 48px; color: red;">
+                        <i class="fa-regular fa-xs fa-circle-xmark"></i>
+                    </span>
+                </div>
+                
+            </div>
+            <div class="row border py-4 m-0 my-2 w-90">
+                <div class="col-sm-7 d-flex">
+                    <div class="col-sm-3">
+                        <img src="../../../assets/articles/article_13.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-sm-9 p-0 m-0 d-flex flex-column justify-content-center align-items-start">
+                        <p class="p-0 m-0 fs-5 text-white">Nom du produit</p>
+                        <p class="p-0 m-0">Numero de produit X</p>
+                    </div>
+                </div>
+                <div class="col-sm-5 d-flex justify-content-between align-items-center">
+                    <p class="text-white fs-4 m-0">49,00€</p>
+                    <div class="px-2 w-30 bg-white d-flex justify-content-between align-items-center">
+                        <span class="fs-2 p-0">-</span>
+                        <span class="mx-3 fs-3">1</span>
+                        <span class="fs-2 p-0">+</span>
+                    </div>
+                    <span style="font-size: 48px; color: red;">
+                        <i class="fa-regular fa-xs fa-circle-xmark"></i>
+                    </span>
+                </div>
+                
             </div>
         </div>
     </div>
-<!-- </div> -->
+</section>

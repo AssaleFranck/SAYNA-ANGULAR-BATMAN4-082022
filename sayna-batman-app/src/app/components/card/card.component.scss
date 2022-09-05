@@ -1,29 +1,17 @@
-.card {
-    // width: 30%;
-    // height: 20;
-    border-radius: none !important;
-    border: none;
-}
-.card-body {
-    background: black;
-    padding: 0;
+.level {
+    background: none;
 }
 
-a {
-    text-transform: capitalize;
-    text-decoration: none;
-    color: #fff;
+.w-30 {
+    width: 30% !important;
+}
+.w-90 {
+    width: 90% !important;
 }
 
-.btn_bat {
-    font-size: 1.8vw;
-    font-weight: normal;
-    // padding: 1vw 5.5vw;
-    width: 90%;
-    text-transform: uppercase;
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0.4),#b113139f);
+.active {
+    color: #fff !important;
     &:hover{
-        background: linear-gradient(90deg, rgba(255, 255, 255, 0.644),#b11313);
-
+        color: red !important;
     }
 }

@@ -12,6 +12,7 @@ const routes: Routes = [
   {path:'eshop' ,component:EshopComponent},
   {path:'card' ,component:CardComponent},
   {path:'game',component:GameComponent},
+  {path:'card',component:CardComponent},
   {path:'**',component:NotFundComponent}
 ];
 

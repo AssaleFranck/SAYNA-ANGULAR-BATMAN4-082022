@@ -1,0 +1,67 @@
+.card {
+    // width: 30%;
+    // height: 20;
+    border-radius: none !important;
+    border: none;
+}
+.card-body {
+    background: black;
+    padding: 0;
+}
+
+a {
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn_bat {
+    font-size: 1.8vw;
+    font-weight: normal;
+    // padding: 1vw 5.5vw;
+    width: 90%;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.4),#b113139f);
+    &:hover{
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0.644),#b11313);
+
+    }
+}
+
+button {
+    border: none !important;
+    background: none !important;
+    color: #b11313;
+}
+
+span {
+    color: #fff;
+}
+
+
+#price{
+    background: red !important;
+}
+
+.bg-none {
+    background: none !important;
+}
+
+label {
+    color: #fff;
+}
+
+#border {
+    color: #fff !important;
+    border: 1px solid red;
+}
+// input[type:"checkbox"]
+button{
+    color: red !important;
+    outline: none;
+}
+
+// .form-check-input {
+//     background: black !important;
+//     border: 1px solid #fff;
+// }
